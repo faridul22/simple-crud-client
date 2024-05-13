@@ -12,21 +12,6 @@ const Update = () => {
         console.log(name, email)
         const updatedUser = { name, email }
 
-        // fetch(`http://localhost:5000/users/${loadedUser._id}`, {
-        //     method: 'PUT',
-        //     headers: {
-        //         'content-type': 'application/json'
-        //     },
-        //     body: JSON.stringify(updatedUser)
-        // })
-        //     .then(res => res.json())
-        //     .then(data => {
-        //         console.log(data)
-        //     })
-
-
-
-
 
         fetch(`http://localhost:5000/users/${loadedUser._id}`, {
             method: 'PUT',
