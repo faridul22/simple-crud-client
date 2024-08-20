@@ -20,7 +20,10 @@ const SimpleForm = () => {
             .then(res => res.json())
             .then(data => {
                 console.log(data)
-                alert("User created successfully")
+                if (data.insertedId) {
+                    alert("User created successfully");
+                    form.reset()
+                }
             })
     }
     return (
